@@ -1,0 +1,58 @@
+:root {
+    --bg: #111318;
+    --panel: #171a21;
+    --input: #20242d;
+    --hover: #292e38;
+
+    --text: #f2f3f5;
+    --muted: #858c98;
+
+    --border: #303642;
+}
+
+:root[data-theme="light"] {
+    --bg: #f5f7fa;
+    --panel: #ffffff;
+    --input: #eef1f5;
+    --hover: #e2e6ec;
+
+    --text: #171a21;
+    --muted: #687080;
+
+    --border: #d9dee7;
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background: var(--bg);
+    transition: background-color 0.2s ease;
+}
+
+body {
+    margin: 0;
+
+    background: var(--bg);
+    color: var(--text);
+
+    transition:
+            background-color 0.2s ease,
+            color 0.2s ease;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
